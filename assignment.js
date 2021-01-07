@@ -2,7 +2,7 @@
 //  1
 
  // Here we ask the user if they eat fish, and store the result (true/false) in a variable.
- var eatFish= prompt("Do you eat fish?"); 
+//  var eatFish= prompt("Do you eat fish?"); 
 
  // If the user eats fish (eatFish === true) doument.write, "Fish is rich in B12".
             // if (eatFish=== yes) {
