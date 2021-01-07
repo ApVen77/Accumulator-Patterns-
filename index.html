@@ -1,65 +1,78 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Accumulator Patterns</title>
-    
-  </head>
-  <body>
+
+</head>
+
+<body>
 
     <h1>Open the console to see the magic!</h1>
 
     <script>
 
-      // Creating a car object.
-      
-
-        // Give 5 properties properties to the car object.
+        var car = {
+            make: "Honda",
+            model: "Fit",
+            color: "Blue Raspberry",
+            mileage: 3000,
+            isWorking: true,
         
+            // Creating the driveToWork method.
+            // A method is a function associated with an object.
+            driveToWork: function () {
 
-        // Creating the driveToWork method.
-        // A method is a function associated with an object.
+                // When we say "this" (as in this.mileage) we are referring to the object the method is a part of.
+                // In this case, we will alert the mileage of the car object.
+                alert("Old Mileage: " + this.mileage + this.isWorking);
+
+                // Adding 8 to the car's mileage.
+                this.mileage = this.mileage + 8;
+
+                // Alerting the car's new mileage.
+                alert("New mileage: " + this.mileage);
+            },
+
+            // The driveAroundWorld method adds 24,000 miles to our car, sets isWorking to false, and makes some alerts.
+            driveAroundWorld: function () {
+
+                alert("Old Mileage: " + this.mileage);
+
+                this.mileage = this.mileage + 24000;
+
+                alert("New Mileage: " + this.mileage);
+                alert("Car needs a tuneup!");
+
+                this.isWorking = false;
+            }, 
+            honk: function () {
+                alert("honk honk" + this.color);
+            } 
+        };
         
-          // In this case, we will alert the mileage of the car object.
-          
-
-          // Adding 8 to the car's mileage.
-          
-
-          // Alerting the car's new mileage.
-          
-
-        // The driveAroundWorld method adds 24,000 miles to our car, sets isWorking to false, and makes some alerts.
-       
-
-        // The getTuneUp method sets isWorking to true and alerts a message.
-        
-
         // The honk method alerts a honking message.
-        
+        // Alerting the car's new mileage.
+        console.log("New mileage: " + this.mileage);
+        console.log(car.make);
+        // The car's model using bracket notation?
+        console.log(car.model);
+
+        // The car's mileage using dot notation?
+        console.log(car.mileage);
+        //   console.log(car[make]); 
+        function honk() {
+            console.log("honk honk beep beep");
+        }
 
 
-      // How would we log...
 
-      // The car's make using dot notation?
-     
 
-      // The car's model using bracket notation?
-      
-
-      // The car's mileage using dot notation?
-      
-
-      // How would we run the car's driveToWork method?
-     
-
-      // How would we run the car's driveAroundWorld method?
-     
-
-      // How would we run the getTuneUp method?
-    
 
     </script>
-   <script src="assignment.js"></script> 
-  </body>
+    <script src="assignment.js"></script>
+    <script src="ES6.js"></script>
+</body>
+
 </html>
