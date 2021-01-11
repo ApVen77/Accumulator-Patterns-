@@ -1,11 +1,16 @@
 //use strict
-'use strict'
+'use strict';
+//enclosed in single quotes
+//ends with a semicolon 
 
-//template literal 
+//template literal/strings 
 const firstName = 'Jane';
 console.log(`Hello ${firstName}!
 How are you
 today?`);
+//enclosed in backticks //next to the 1 key//
+//${}
+
 
 // Output:
 // Hello Jane!
@@ -16,8 +21,25 @@ const food= 'pasta';
 const beverage= 'Pepsi';
 const likeDessert= false;
 //🌺//Do this
-console.log('Food: ' + food + '' + 'Drink ' + beverage + '' +likeDessert); 
+console.log(`Food: ${food} Drink: ${beverage} ${likeDessert}`); 
 
+// const character= "sonic";
+// const powers= "super fast";
+// const color= "blue";
+// const speed= 1000; 
+// console.log(); 
+const character= "Goku";
+const abilities= "God like abilities";
+const suit= "Blue and Orange";
+const power= "Over nineThousand!";
+console.log(`${character}  has   ${abilities}  his kit is   ${suit} his power level is ${power}`); 
+
+
+const characters= "Hulk";
+const powers= "superhuman strength";
+const color= "green";
+const speed= 400;
+console.log(`characters: ${characters}\n\ powers: ${powers}\n\  color: ${color} speed: ${speed}`);
 // const let 
 function varTest() {
     var x = 1;
@@ -27,7 +49,7 @@ function varTest() {
     }
     console.log(x);  // 2
   }
-  
+   
   function letTest() {
     let x = 1;
     {
@@ -38,19 +60,23 @@ function varTest() {
   }
 
   //🌺//Do this
-  var i = 0
+  const i = 0
 if (true) {
-  var i = 1;
-  var j= 2; 
+  let m = 1;
+  let j= 2; 
+  console.log(i + j); 
 }
-console.log(i + j); 
 
 //ternary operators
 var age = 26;
 var drink = (age >= 21) ? "Beer" : "Juice";
 console.log(drink); // "Beer"
 
+//condition //if //else 
+
 //🌺//Do this
+// condition ? value if true : value if false
+// ? (if)   : (else) (else if)
 var birthYear= console.log("What year were you born?");
 if (birthYear > 1997 || birthYear < 2020) {
     console.log("You are in Gen Z")
@@ -58,7 +84,9 @@ if (birthYear > 1997 || birthYear < 2020) {
 } else {
     console.log("you inched by")
 };
-
+const birthYear2= 1988;
+const legal= (birthYear2 > 1997 || birthYear2 < 2020) ? "You are a millennial" : "You are Gen Z";
+console.log(legal); 
 //arrow functions
 
 // Traditional Function
@@ -101,9 +129,9 @@ function sample (a){
         
   //Array methods
 
-// let prices = [500, 700, 1000];
-// let taxed = Array.from(prices, price => price * 1.05);
-// console.log(taxed);
+let prices = [500, 700, 1000];
+let taxed = Array.from(prices, price => price * 1.05);
+console.log(taxed);
  
 // // [525, 735, 1050]
 

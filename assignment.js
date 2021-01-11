@@ -1,4 +1,16 @@
 
+     var birthYear= prompt("What year were you born?");
+     // If the user was born before 1997, alert "You are in Generation Z"
+     if (birthYear > 1997 || birthYear > 2020) {
+         alert("You are in Gen Z")
+     // Else if the user was born after 1997, alert "You are a millennial!"
+     } else if (birthYear < 1997 || birthYear > 1980) {
+         alert("You are a millennial")
+     // If neither of the previous conditions was true (birthYear === 1995) we alert "You inched by!"
+     } else (birthYear === 1995); {
+         alert("you inched by")
+     };
+
 //  1
 
  // Here we ask the user if they eat fish, and store the result (true/false) in a variable.
