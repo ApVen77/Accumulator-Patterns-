@@ -5,7 +5,7 @@
 
 //template literal/strings 
 const firstName = 'Jane';
-console.log(`Hello ${firstName}!
+console.log(`Hello ${firstName}
 How are you
 today?`);
 //enclosed in backticks //next to the 1 key//
@@ -132,7 +132,9 @@ function sample (a){
 let prices = [500, 700, 1000];
 let taxed = Array.from(prices, price => price * 1.05);
 console.log(taxed);
- 
+
+//create temp variable  multipling the item by 1.05 5%
+
 // // [525, 735, 1050]
 
 // let prices = [500, 700, 1000];
@@ -142,9 +144,10 @@ console.log(taxed);
 // // Array [ 2000, 2000, 2000 ]
 
 // let prices = [500, 700, 1000];
-// prices.fill(2000, 0);
+// prices.fill(2000, 3);
 // console.log(prices);
  
+//fill from the index
 // // Array [ 2000, 2000, 2000 ]
 
 // let prices = [500, 600, 700, 800, 900, 1000, 1500];
@@ -162,8 +165,9 @@ console.log(taxed);
 // // expected output: Array [2, 8, 18, 32]
 
 //🌺//Do this
-var miArray= ["April", "Kevin", "Syed", "Ngoc", "Sheily", "Destinee", "Abraham", "Marvin"];
+const sweetArray = [2, 3, 4, 5, 35]
+const sweeterArray = sweetArray.map(sweetItem => {
+    return sweetItem * 2
+})
 
-//Number Methods
-document.getElementById("love").innerHTML =
-Number.isSafeInteger(10) + "<br>" + Number.isSafeInteger(12345678901234567890);
+console.log(sweeterArray)

@@ -1,15 +1,4 @@
 
-     var birthYear= prompt("What year were you born?");
-     // If the user was born before 1997, alert "You are in Generation Z"
-     if (birthYear > 1997 || birthYear > 2020) {
-         alert("You are in Gen Z")
-     // Else if the user was born after 1997, alert "You are a millennial!"
-     } else if (birthYear < 1997 || birthYear > 1980) {
-         alert("You are a millennial")
-     // If neither of the previous conditions was true (birthYear === 1995) we alert "You inched by!"
-     } else (birthYear === 1995); {
-         alert("you inched by")
-     };
 
 //  1
 
@@ -30,14 +19,7 @@
  // 2
  // Ask the user what year they were born, and store their response to a variable.
  
-            var birthYear= prompt("What year were you born?");
-            if (birthYear > 1997 || birthYear > 2020) {
-                alert("You are in Gen Z")
-            } else if (birthYear < 1997 || birthYear > 1980) {
-                alert("You are a millennial")
-            } else {
-                alert("you inched by")
-            };
+        
  // If the user was born before 1997, alert "You are in Generation Z"
             
  // Else if the user was born after 1997, alert "You are a millennial!"
@@ -49,7 +31,7 @@
 // 3//
 
  // Create an array called  animals.
- var animals= ["bird", "cat", "dog", "hamster", "turtle", "fish"];  
+//  var animals= ["bird", "cat", "dog", "hamster", "turtle", "fish"];  
  // Log the length of the  animals array to the document
  
 
