@@ -32,15 +32,10 @@ var multiplyES5 = function(x, y) {
 };
 
 // ES6
-🌺
+//  🌺
 
-//ES5
-var docLogEs5 = function docLog() {
-  console.log(document);
-};
 
-//ES6
-🌺
+
 
 //Debug ME//
 
